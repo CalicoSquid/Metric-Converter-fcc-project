@@ -1,7 +1,46 @@
-code {
-    background-color: whitesmoke;
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    transition: width 2s;
 }
 
-section, header {
-    margin: 50px;
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,65,9,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.container {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(235, 221, 221);
+}
+
+#jsonResult, #result {
+    height: 50px;
+    font-family: monospace;
+    background-color: rgb(53, 51, 51);
+    border: 1px solid black;
+    color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    min-width: 300px;
+}
+
+#result {
+    margin: auto;
+    max-width: 500px;
+    font-size: 1.2rem;
+}
+
+form { margin: 15px;
 }
